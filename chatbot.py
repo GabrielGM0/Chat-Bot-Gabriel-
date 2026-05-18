@@ -26,7 +26,7 @@ chat = ChatGroq(model='llama-3.3-70b-versatile')
 
 def resposta_bot(mensagens):
 
-    mensagens_modelo = [('system', 'Você é meu primeiro assistete Eve ')]
+    mensagens_modelo = [('system', 'Você é meu primeiro assistete GOB ')]
 
     mensagens_modelo += mensagens #guarda histórico das mensagens
 
@@ -40,7 +40,7 @@ def resposta_bot(mensagens):
 
 #Interação com o usuário
 
-print('Bem-vindo à Eve')
+print('Bem-vindo à GOB')
 
 mensagens = []
 
@@ -64,6 +64,6 @@ while True:
 
 #finalização
 
-print('Muito obrigado por usar a Eve')
+print('Muito obrigado por usar a GOB')
 
 print(mensagens)
