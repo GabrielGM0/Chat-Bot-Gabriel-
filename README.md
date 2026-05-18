@@ -179,11 +179,11 @@ api_key = 'SUA_API_KEY'
 
 Substitua pela sua chave válida da Groq.
 
-*Para criar sua chave;
-*Primeiro: Entre no site da grok api keys;
-*Segundo: Crie uma conta na grok;
-*Terceiro: Crie uma chave;
-*Quarto: Copie essa chave e coloque no local do código 'SUA_API_KEY';
+* Para criar sua chave;
+* Primeiro: Entre no site da grok api keys;
+* Segundo: Crie uma conta na grok;
+* Terceiro: Crie uma chave;
+* Quarto: Copie essa chave e coloque no local do código 'SUA_API_KEY'.
 
 ---
 
