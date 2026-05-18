@@ -15,7 +15,6 @@ A proposta do sistema é demonstrar, de forma prática, como integrar modelos de
 O principal objetivo deste projeto é:
 
 * Criar um chatbot funcional utilizando modelos de IA generativa;
-* Aplicar conceitos de integração com APIs de modelos LLM;
 * Utilizar o framework LangChain para gerenciamento de prompts;
 * Simular uma conversa natural entre usuário e inteligência artificial;
 * Servir como base para futuros projetos mais avançados de assistentes virtuais.
