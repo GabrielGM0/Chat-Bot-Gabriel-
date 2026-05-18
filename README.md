@@ -155,9 +155,6 @@ Mantém a aplicação em execução até o usuário digitar:
 ```text
 x
 ```
-
----
-
 ---
 
 ## 2. Instale as Dependências
@@ -209,67 +206,7 @@ Para finalizar:
 ```text
 Usuário: x
 ```
-
 ---
-
-# 📂 Estrutura do Projeto
-
-```text
-gob-chatbot/
-│
-├── app.py
-├── README.md
-├── requirements.txt
-└── .env
-```
-
----
-
-# 🚀 Tecnologias Utilizadas
-
-* Python
-* LangChain
-* Groq API
-* LLaMA 3.3
-* Programação Orientada a Funções
-
----
-
-# 🧩 Desafios Superados
-
-## 1. Integração com API de IA
-
-Um dos principais desafios foi realizar a autenticação correta utilizando variáveis de ambiente e garantir a comunicação com a API da Groq.
-
----
-
-## 2. Gerenciamento de Contexto
-
-Foi necessário implementar um histórico de mensagens para manter o contexto da conversa, tornando as respostas mais naturais.
-
----
-
-## 3. Estruturação de Prompts
-
-A criação do `ChatPromptTemplate` exigiu organização adequada das mensagens para que o modelo compreendesse corretamente o fluxo da conversa.
-
----
-
-## 4. Controle do Fluxo da Aplicação
-
-Foi desenvolvido um loop contínuo para permitir múltiplas interações sem reiniciar o sistema.
-
----
-
-# 🔮 Melhorias Futuras
-
-* Interface gráfica;
-* Integração com banco de dados;
-* Memória persistente;
-* Deploy em nuvem;
-* Integração com WhatsApp ou Telegram;
-* Suporte a voz;
-* Uso de múltiplos modelos de IA.
 
 ---
 
