@@ -173,15 +173,7 @@ Substitua pela sua chave válida da Groq.
 
 ---
 
-## 4. Execute o Projeto
-
-```bash
-python app.py
-```
-
----
-
-## 5. Interaja com o Chatbot
+## 4. Interaja com o Chatbot
 
 Exemplo:
 
