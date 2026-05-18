@@ -7,9 +7,6 @@ O projeto **GOB (Gerador de Orientações Básicas)** foi desenvolvido como um p
 Foi feito no Google colab
 
 A proposta do sistema é demonstrar, de forma prática, como integrar modelos de linguagem (LLMs) em aplicações Python, permitindo interações inteligentes entre usuário e assistente virtual.
-
-O chatbot mantém um histórico de mensagens durante a execução, proporcionando uma conversa contínua e contextualizada.
-
 ---
 
 # 🎯 Objetivo do Projeto
