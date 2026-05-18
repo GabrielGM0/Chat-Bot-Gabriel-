@@ -158,14 +158,6 @@ x
 
 ---
 
-# ▶️ Instruções de Uso
-
-## 1. Clone o Repositório
-
-```bash
-git clone https://github.com/seu-repositorio/gob-chatbot.git
-```
-
 ---
 
 ## 2. Instale as Dependências
@@ -173,12 +165,6 @@ git clone https://github.com/seu-repositorio/gob-chatbot.git
 ```bash
 pip install langchain
 pip install langchain-groq
-```
-
-Ou utilize:
-
-```bash
-pip install -r requirements.txt
 ```
 
 ---
@@ -192,6 +178,12 @@ api_key = 'SUA_API_KEY'
 ```
 
 Substitua pela sua chave válida da Groq.
+
+Para criar sua chave. 
+Primeiro: Entre no site da grok api keys
+Segundo: Crie uma conta na grok
+Terceiro: Crie uma chave 
+Quarto: Copie essa chave e coloque no local do código 'SUA_API_KEY'
 
 ---
 
