@@ -27,15 +27,6 @@ A aplicação funciona via terminal (CLI — Command Line Interface), onde o usu
 
 * `llama-3.3-70b-versatile`
 
-A comunicação ocorre da seguinte forma:
-
-1. O usuário digita uma mensagem;
-2. A mensagem é armazenada no histórico;
-3. O LangChain monta o prompt completo;
-4. O modelo da Groq processa a solicitação;
-5. O chatbot retorna a resposta;
-6. O histórico é atualizado continuamente.
-
 ---
 
 # 🏗️ Arquitetura da Solução
