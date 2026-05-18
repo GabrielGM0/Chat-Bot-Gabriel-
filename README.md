@@ -1,1 +1,294 @@
 # Chat-Bot-Gabriel-
+# README — Projeto GOB ChatBot com LangChain + Groq
+
+## 📌 Contexto do Projeto
+
+O projeto **GOB (Gerador de Orientações Básicas)** foi desenvolvido como um primeiro assistente virtual utilizando **Python**, **LangChain** e a API da **Groq**, com o objetivo de criar uma aplicação simples de conversação em terminal.
+
+A proposta do sistema é demonstrar, de forma prática, como integrar modelos de linguagem (LLMs) em aplicações Python, permitindo interações inteligentes entre usuário e assistente virtual.
+
+O chatbot mantém um histórico de mensagens durante a execução, proporcionando uma conversa contínua e contextualizada.
+
+---
+
+# 🎯 Objetivo do Projeto
+
+O principal objetivo deste projeto é:
+
+* Criar um chatbot funcional utilizando modelos de IA generativa;
+* Aplicar conceitos de integração com APIs de modelos LLM;
+* Utilizar o framework LangChain para gerenciamento de prompts;
+* Simular uma conversa natural entre usuário e inteligência artificial;
+* Servir como base para futuros projetos mais avançados de assistentes virtuais.
+
+---
+
+# 👀 Visão Geral da Solução
+
+A aplicação funciona via terminal (CLI — Command Line Interface), onde o usuário envia perguntas e o chatbot responde utilizando o modelo:
+
+* `llama-3.3-70b-versatile`
+
+A comunicação ocorre da seguinte forma:
+
+1. O usuário digita uma mensagem;
+2. A mensagem é armazenada no histórico;
+3. O LangChain monta o prompt completo;
+4. O modelo da Groq processa a solicitação;
+5. O chatbot retorna a resposta;
+6. O histórico é atualizado continuamente.
+
+---
+
+# 🏗️ Arquitetura da Solução
+
+## Componentes Utilizados
+
+### 1. Python
+
+Responsável pela estrutura principal da aplicação.
+
+### 2. LangChain
+
+Framework utilizado para:
+
+* Gerenciamento de prompts;
+* Encadeamento de chamadas;
+* Organização do histórico da conversa.
+
+### 3. Groq API
+
+Responsável pela execução do modelo de linguagem.
+
+### 4. Modelo LLM
+
+Modelo utilizado:
+
+```python
+llama-3.3-70b-versatile
+```
+
+---
+
+# ⚙️ Fluxo de Funcionamento
+
+```text
+Usuário
+   ↓
+Input da Mensagem
+   ↓
+Histórico de Conversa
+   ↓
+ChatPromptTemplate (LangChain)
+   ↓
+Modelo LLM via Groq
+   ↓
+Resposta Gerada
+   ↓
+Exibição no Terminal
+```
+
+---
+
+# 🧠 Explicação do Código
+
+## Importação das Bibliotecas
+
+```python
+import os
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_groq import ChatGroq
+```
+
+As bibliotecas são utilizadas para:
+
+* Manipulação de variáveis de ambiente;
+* Criação dos prompts;
+* Comunicação com a API da Groq.
+
+---
+
+## Configuração da API Key
+
+```python
+api_key = 'sua api'
+os.environ['GROQ_API_KEY'] = api_key
+```
+
+Define a chave de autenticação da API da Groq.
+
+---
+
+## Inicialização do Modelo
+
+```python
+chat = ChatGroq(model='llama-3.3-70b-versatile')
+```
+
+Seleciona o modelo de IA utilizado pelo chatbot.
+
+---
+
+## Função Principal do Bot
+
+```python
+def resposta_bot(mensagens):
+```
+
+Responsável por:
+
+* Montar o histórico da conversa;
+* Criar o template de mensagens;
+* Enviar para o modelo;
+* Retornar a resposta da IA.
+
+---
+
+## Loop de Conversação
+
+```python
+while True:
+```
+
+Mantém a aplicação em execução até o usuário digitar:
+
+```text
+x
+```
+
+---
+
+# ▶️ Instruções de Uso
+
+## 1. Clone o Repositório
+
+```bash
+git clone https://github.com/seu-repositorio/gob-chatbot.git
+```
+
+---
+
+## 2. Instale as Dependências
+
+```bash
+pip install langchain
+pip install langchain-groq
+```
+
+Ou utilize:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 3. Configure sua API Key
+
+No código:
+
+```python
+api_key = 'SUA_API_KEY'
+```
+
+Substitua pela sua chave válida da Groq.
+
+---
+
+## 4. Execute o Projeto
+
+```bash
+python app.py
+```
+
+---
+
+## 5. Interaja com o Chatbot
+
+Exemplo:
+
+```text
+Usuário: Olá
+Bot: Olá! Como posso ajudar você hoje?
+```
+
+Para finalizar:
+
+```text
+Usuário: x
+```
+
+---
+
+# 📂 Estrutura do Projeto
+
+```text
+gob-chatbot/
+│
+├── app.py
+├── README.md
+├── requirements.txt
+└── .env
+```
+
+---
+
+# 🚀 Tecnologias Utilizadas
+
+* Python
+* LangChain
+* Groq API
+* LLaMA 3.3
+* Programação Orientada a Funções
+
+---
+
+# 🧩 Desafios Superados
+
+## 1. Integração com API de IA
+
+Um dos principais desafios foi realizar a autenticação correta utilizando variáveis de ambiente e garantir a comunicação com a API da Groq.
+
+---
+
+## 2. Gerenciamento de Contexto
+
+Foi necessário implementar um histórico de mensagens para manter o contexto da conversa, tornando as respostas mais naturais.
+
+---
+
+## 3. Estruturação de Prompts
+
+A criação do `ChatPromptTemplate` exigiu organização adequada das mensagens para que o modelo compreendesse corretamente o fluxo da conversa.
+
+---
+
+## 4. Controle do Fluxo da Aplicação
+
+Foi desenvolvido um loop contínuo para permitir múltiplas interações sem reiniciar o sistema.
+
+---
+
+# 🔮 Melhorias Futuras
+
+* Interface gráfica;
+* Integração com banco de dados;
+* Memória persistente;
+* Deploy em nuvem;
+* Integração com WhatsApp ou Telegram;
+* Suporte a voz;
+* Uso de múltiplos modelos de IA.
+
+---
+
+# 📖 Conclusão
+
+O projeto GOB demonstra de forma prática como construir um chatbot utilizando modelos modernos de inteligência artificial com Python e LangChain.
+
+Além de servir como aprendizado sobre integração com LLMs, o projeto também estabelece uma base sólida para evolução futura em aplicações de IA conversacional.
+
+---
+
+# 👨‍💻 Autor
+
+Projeto desenvolvido para estudos e aprendizado em Inteligência Artificial e desenvolvimento de chatbots com Python.
