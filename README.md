@@ -182,7 +182,7 @@ Substitua pela sua chave válida da Groq.
 * Para criar sua chave:
 * Primeiro: Entre no site da groq api keys; link: https://console.groq.com/keys
 * Segundo: Crie uma conta no groq;
-* Terceiro: Crie uma chave;
+* Terceiro: Crie uma chave de API;
 * Quarto: Copie essa chave e coloque no local do código 'SUA_API_KEY'.
 
 ---
