@@ -4,6 +4,7 @@
 ## 📌 Contexto do Projeto
 
 O projeto **GOB (Gerador de Orientações Básicas)** foi desenvolvido como um primeiro assistente virtual utilizando **Python**, **LangChain** e a API da **Groq**, com o objetivo de criar uma aplicação simples de conversação em terminal.
+Foi feito no Google colab
 
 A proposta do sistema é demonstrar, de forma prática, como integrar modelos de linguagem (LLMs) em aplicações Python, permitindo interações inteligentes entre usuário e assistente virtual.
 
